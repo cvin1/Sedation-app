@@ -114,6 +114,7 @@ current_date = current_datetime.strftime("%Y-%m-%d")
 current_time = current_datetime.strftime("%H:%M:%S")
 
 # Afficher la date et l'heure actuelle
+st.warning("⚠️Disclaimer: This app is for demonstration/educational purposes only. Do not use for actual clinical decision-making.⚠️")
 st.markdown(f"**Unité de soins intensifs - Chambre 10 / {current_date} - {current_time}**")
 # Vérification : y a-t-il eu une pause (débit = 0) dans la sédation ?
 pause_detectee = (df["Débit Propofol (mg/h)"] == 0).any()
